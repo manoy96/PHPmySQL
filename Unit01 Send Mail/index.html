@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<meta charset="UTF-8">
+<title>Send</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600" rel="stylesheet">
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- -------------------------------------------------------------------- -->
+<main>
+  <header>
+<h1>Get Your Pizza</h1>
+</header>
+
+<section id="formProblems" class="hiddenErrorMsg">There was a problem with your submission.
+  <div>Errors have been <i>highlighted</i> below.</div>
+  </section>
+  
+  
+  <form class="myForm" action="processEmail.php" method="POST" enctype="multipart/form-data">
+    
+  <section id="fullName" class="normal">
+  <label ><span>Full Name*</span>
+    <input name="fullName" type="text" class="myInput" placeholder = "Jon Smith" autofocus required>
+    <div>Please provide your full name</div>
+  </label>
+  </section>
+
+  <section id="fullName" class="normal">
+    <label ><span>Email*</span>
+      <input name="email" type="email" class="myInput" placeholder = "j.smith@email.com" autofocus required>
+      <div>Please provide your email address</div>
+    </label>
+    </section>
+
+    <section id="fullName" class="normal">
+        <label ><span>Address*</span>
+          <input name="address" type="text" class="myInput" placeholder = "123 Fake Street" autofocus required>
+          <div>Please provide your address</div>
+        </label>
+        </section>
+  
+  <section class="normal">
+  <span>Crust</span>
+    <label><input value="Regular" type="radio" name="crust">Regular</label>
+    <label><input value="Thin" type="radio" name="crust">Thin</label>
+    <div>Please select your crust</div>
+  </section>
+  
+  
+  
+  <section id="vehicle" class="normal">
+  <label ><span>Topping</span>
+    <select name="topping" class="myInput">
+      <option value="Pepperoni">Pepperoni</option>
+      <option value="Hawaiian">Hawaiian</option>
+      <option value="Chicken">Chicken</option>
+      <option value="Green Pepper">Green Pepper</option>
+    </select>
+    <div>Please select a vehicle</div>
+  </label>
+  </section>
+  
+  <input type="submit" value="Process My Rental" id="submitButton" class="submitButton">
+  
+  </form>
+  
+</main>
+</body>
+</HTML>
