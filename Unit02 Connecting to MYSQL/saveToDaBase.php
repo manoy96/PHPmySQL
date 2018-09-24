@@ -7,21 +7,18 @@ $topping = $_POST[topping];
 
 
 //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
-$dbconnection = mysqli_connect('localhost','manuele1_3760usr','&e,U[D6,=d~#','manuele1_dgm3760') or die('connection failed');
+$dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
 
 //BUILD THE QUERRY
-// $query = "
-// INSERT INTO pizza_inquires(id, name, email, crust, topping) 
-
-// VALUES (2, 'terry','me@u.com','thin','hawaiian')
-// ";
+$query = "INSERT INTO pizza_inquires (name, email, address, crust, topping)".
+"VALUES ('$fullname','$email','$address','$crust','$topping')";
 
 // //NOW TRY AND TALK TO THE DATABASE
-// $result = mysqli_query($dbconnection, $query) or die ('query failed');
+$result = mysqli_query($dbconnection ,$query) or die('query failed');
 
 //WE'RE DONE SO HANG UP
 
-// mysqli_close($dbconnection);
+mysqli_close($dbconnection);
 ?>
 
 
@@ -36,11 +33,12 @@ $dbconnection = mysqli_connect('localhost','manuele1_3760usr','&e,U[D6,=d~#','ma
   <link href="css/styles.css" rel="stylesheet" type="text/css">
  </head>
  <body>
+   <main>
    <header>
     <h1>Congrats</h1>
    </header>
    <p>Thanks <?php echo $fullname;?> for placing an order with us. </p>
   
-   
+  </main>
  </body>
 </html>
