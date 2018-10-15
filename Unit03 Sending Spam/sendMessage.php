@@ -8,14 +8,13 @@ $from = $_POST['10612335@my.uvu.edu'];
 //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
 $dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
 
-//BUILD THE QUERRY
+//BUILD THE QUERY
 $query = "SELECT * FROM Newsletter";
 
 // //NOW TRY AND TALK TO THE DATABASE
 $result = mysqli_query($dbconnection ,$query) or die('query failed');
 
 //WE'RE DONE SO HANG UP
-
 mysqli_close($dbconnection);
 
 //DISPLAY WHAT WE FOUND
