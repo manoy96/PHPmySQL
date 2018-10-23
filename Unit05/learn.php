@@ -20,7 +20,7 @@
   <div>Errors have been <i>highlighted</i> below.</div>
   </section>
 
-  <form action="learn.php" method="GET">
+  <form action=" " method="GET">
     <fieldset>
       <legend>Using as Array</legend>
       <p>Please select the people for the array</p>
