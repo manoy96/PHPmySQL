@@ -7,7 +7,7 @@ $phone = $_POST[phone];
 $photo = $_POST[photo];
 
 // make photo path and name
-$ext = pathinfo( , PATHINFO_EXTENSION);
+$ext = pathinfo( ,PATHINFO_EXTENSION);
 
 
 $filename = 'employees'
