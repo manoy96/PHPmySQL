@@ -35,14 +35,44 @@ form.myForm section {
 }
 
 form{
-	width: 100%;
+	width: 40%;
+	margin: 1rem auto;
+	background-color: rgb(247, 247, 247);
+	border: 1px solid #333;
+	padding: 1rem;
 }
 form fieldset{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	margin: 1rem 0;
 }
-
+fieldset section {
+	display: flex;
+	flex-direction: column;
+}
+fieldset section label{
+	display: flex;
+	flex-direction: column;
+}
+fieldset section label span {
+	margin: .5rem 0 .3rem .3rem;
+}
+fieldset section label input{
+	border-radius: 15px;
+	border: none;
+	background-color: rgb(255, 255, 255);
+	height: 30px;
+	padding: .2rem 1rem;
+}
+fieldset legend{
+	width: 30%;
+	border: 2px solid #333;
+	border-radius: 8px;
+	background-color: #333;
+	color: #fff;
+	
+}
 
 form.myForm label {display: block;}
 form.myForm span {
@@ -71,8 +101,7 @@ form.myForm .myInput:focus {
 
 .submitButton {
 	border-radius: 20px;
-	background: #5157a8;
-	background: linear-gradient(to bottom,  #5157a8 0%,#a5a2c2 100%);
+	background: #2c2d2e;
 	color: white;
 	border: none;
 	width: 100%;
@@ -80,6 +109,9 @@ form.myForm .myInput:focus {
 	text-align: center;
 	font-size: 1rem;
 	margin-top: 1rem;
+}
+.submitButton:hover{
+	background-color: rgb(71, 71, 71);
 }
 
 
