@@ -46,6 +46,7 @@ form fieldset{
 	display: flex;
 	flex-direction: column;
 	margin: 1rem 0;
+	
 }
 fieldset section {
 	display: flex;
