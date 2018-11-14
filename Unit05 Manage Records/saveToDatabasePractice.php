@@ -9,8 +9,8 @@ $photo = $_POST[photo];
 // // make photo path and name
 $ext = pathinfo($_FILES['photo']['name'], PATHINFO_EXTENSION);
 
-$filename = 'employees/'.$first . $last.'.'.$ext;
-echo $filename;
+$filename = $first . $last.time().'.'.$ext;
+$filepath = 'employees/';
 
 
 // -------------VERIFY THE IMAGE IS VALID---------
@@ -40,7 +40,7 @@ if($_FILES['photo']['type'] == 'image/gif' || $_FILES['photo']['type'] == 'image
 if ($validImage == true) {
   //upload the file
   $tmp_name = $_FILES['photo']['tmp_name'];
-  move_uploaded_file($tmp_name, $filename);
+  move_uploaded_file($tmp_name, "$filepath$filename");
   @unlink($_FILES['photo']['tmp_name']);
 
 
@@ -57,9 +57,6 @@ $result = mysqli_query($dbconnection ,$query) or die('query failed');
 // WE'RE DONE SO HANG UP
 
 mysqli_close($dbconnection);
-
-echo $query;
-
 
 } else {
   //try again
@@ -90,15 +87,19 @@ echo $query;
   <script src="main.js"></script>
 </head>
 <body>
-  <h1>Test Upload Page</h1>
+  <h1>Employee Successfully Added</h1>
+
   <?php
+  echo "$first $last <br>";
+  echo "$department <br>";
+  echo "$phone <br>";
 
-  echo '<img src="'.$filename.'" alt="photo"/>';
+  echo '<img src="'.$filepath.$filename.'" alt="photo"/>';
 
-  echo '<br>size--'.$_FILES['photo']['size'];
-  echo '<br>type--'.$_FILES['photo']['type'];
-  echo '<br>temp--'.$_FILES['photo']['tmp_name'];
-  echo '<br>name--'.$_FILES['photo']['name'];
+  // echo '<br>size--'.$_FILES['photo']['size'];
+  // echo '<br>type--'.$_FILES['photo']['type'];
+  // echo '<br>temp--'.$_FILES['photo']['tmp_name'];
+  // echo '<br>name--'.$_FILES['photo']['name'];
 
   ?>
 </body>
