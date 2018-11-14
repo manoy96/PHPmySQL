@@ -1,3 +1,26 @@
+<?php 
+
+//BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
+$dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
+
+//BUILD THE QUERRY
+$query = "SELECT * FROM employee_simple ORDER BY last ASC";
+
+// //NOW TRY AND TALK TO THE DATABASE
+$result = mysqli_query($dbconnection ,$query) or die('query failed');
+
+?>
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
@@ -18,12 +41,15 @@
   while ($row = mysqli_fetch_array($result)) {
     echo '<p>';
     echo $row['last'] . ', '. $row['first'].' - '.$row['dept'];
-    echo '</p>'
+    echo '<a href="delete2.php?id=' .$row['id']. '">Delete</a>';
+    echo '</p>';
   };
 
   mysqli_close($dbconnection);
   ?>
 
+
+  <?php require_once('footer.php');?>
 
 
 
