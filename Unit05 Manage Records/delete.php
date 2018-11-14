@@ -15,11 +15,13 @@
 
   <?php
   // DISPLAY WHAT WE FOUND
-  while ($a <= 10) {
-    # code...
+  while ($row = mysqli_fetch_array($result)) {
+    echo '<p>';
+    echo $row['last'] . ', '. $row['first'].' - '.$row['dept'];
+    echo '</p>'
   };
-  
-  
+
+  mysqli_close($dbconnection);
   ?>
 
 
