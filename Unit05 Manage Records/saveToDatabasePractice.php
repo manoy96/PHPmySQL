@@ -18,7 +18,7 @@ $validImage = true;
 
 // -------------check if image is missing-----------
 if ($_FILES['photo']['size'] == 0){
-  echo 'OOPS -- you did not select an image!f';
+  echo 'OOPS -- you did not select an image!';
   $validImage = false;
 };
 
@@ -42,6 +42,24 @@ if ($validImage == true) {
   $tmp_name = $_FILES['photo']['tmp_name'];
   move_uploaded_file($tmp_name, $filename);
   @unlink($_FILES['photo']['tmp_name']);
+
+
+  //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
+$dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
+
+//BUILD THE QUERRY
+$query = "INSERT INTO employee_simple (first, last, dept, phone, photo)".
+"VALUES ('$first','$last','$phone','$department','$filename')";
+
+// //NOW TRY AND TALK TO THE DATABASE
+$result = mysqli_query($dbconnection ,$query) or die('query failed');
+
+// WE'RE DONE SO HANG UP
+
+mysqli_close($dbconnection);
+
+echo $query;
+
 
 } else {
   //try again
