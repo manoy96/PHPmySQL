@@ -22,7 +22,7 @@
     echo '<p><a href="detail.php?id='.$row['id'].'">';
     echo $row['last'] . ', '. $row['first'].' - '.$row['dept'];
     echo '</a>';
-    echo '<a href="update.php?id=> - update</a>';
+    echo '<a href="update.php?id='. $row['id'] .'> - update</a>';
     echo '</p>';
   };
 //we're done so hang up
