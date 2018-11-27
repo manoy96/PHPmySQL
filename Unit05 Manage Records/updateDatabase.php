@@ -12,15 +12,13 @@ $phone = $_POST[phone];
 $dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
 
 //BUILD THE QUERRY
-$query = "UPDATE employee_simple SET first='$first', last='$last', dept='$department', phone='$phone' WHERE id=$id ";
+$query = "UPDATE employee_simple SET first='$first', last='$last', dept='$department', phone='$phone' WHERE id=$id";
 
 // //NOW TRY AND TALK TO THE DATABASE
 $result = mysqli_query($dbconnection ,$query) or die('query failed');
 
 // WE'RE DONE SO HANG UP
-
 mysqli_close($dbconnection);
-
 ?>
 
 

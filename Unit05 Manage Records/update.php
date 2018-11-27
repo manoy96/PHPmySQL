@@ -8,27 +8,16 @@ $dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','ma
 $query = "SELECT * FROM employee_simple WHERE id=employee_simple";
 
 // //NOW TRY AND TALK TO THE DATABASE
-$result = mysqli_query($dbconnection ,$query) or die('query failed');
+$result = mysqli_query($dbconnection ,$query) or die('update query failed');
 
 //PUT RESULTS IN A VARIABLE
 $found = mysqli_fetch_array($result);
-
-
-
-
 ?>
 
 
 
 
-
-
-
-
-
-
-
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8" />
@@ -95,7 +84,6 @@ $found = mysqli_fetch_array($result);
 
         <input type="submit" value="Update Employee" id="submitButton" class="submitButton">
 
-       
     </form>
 
 
