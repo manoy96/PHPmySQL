@@ -86,8 +86,6 @@ $found = mysqli_fetch_array($result);
 
     </form>
 
-
-
   
 </body>
 </html>
