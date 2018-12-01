@@ -1,6 +1,8 @@
 <?php 
+require_once('variables.php');
+
 //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
-$dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
+$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('connection failed');
 
 //QUERY
 $query = "SELECT * FROM employee_simple";
@@ -28,6 +30,8 @@ $result = mysqli_query($dbconnection ,$query) or die('query failed');
   <header>
     <h1>Employee Directory</h1>
   </header>
+
+  <?phpinclude_once('navbar.php'); ?>
 
   <?php
   // DISPLAY WHAT WE FOUND

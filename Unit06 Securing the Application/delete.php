@@ -1,51 +1,63 @@
 <?php 
+
 //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
 $dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
 
-//QUERY
-$query = "SELECT * FROM employee_simple";
+//BUILD THE QUERRY
+$query = "SELECT * FROM employee_simple ORDER BY last ASC";
 
 // //NOW TRY AND TALK TO THE DATABASE
 $result = mysqli_query($dbconnection ,$query) or die('query failed');
+
 ?>
 
 
 
 
-<!DOCTYPE HTML>
-<HTML>
+
+
+
+
+
+
+
+<!DOCTYPE <!DOCTYPE html>
+<html>
 <head>
-<meta charset="UTF-8">
-<title>Learn</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600" rel="stylesheet">
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<!-- -------------------------------------------------------------------- -->
-<main>
-  <header>
-    <h1>Employee Directory</h1>
-  </header>
+
+  <h1>Delete Employees</h1>
 
   <?php
   // DISPLAY WHAT WE FOUND
   while ($row = mysqli_fetch_array($result)) {
-    echo '<p><a href="detail.php?id='.$row['id'].'">';
-    echo $row['last'] .', '. $row['first'].' - '.$row['dept'];
-    echo '</a>';
-    echo '<a href="update.php?id='.$row['id'].'"> - update</a>';
+    echo '<p>';
+    echo $row['last'] . ', '. $row['first'].' - '.$row['dept'];
+    echo '<a href="delete2.php?id=' .$row['id']. '">Delete</a>';
     echo '</p>';
   };
-//we're done so hang up
+
   mysqli_close($dbconnection);
   ?>
-  <nav>
-  <a href="delete.php">Delete Employee</a> |
-  <a href="add.html">Add Employee</a> |
-  <a href="update.php">Update Employee</a>
-</nav>
-</main>
+
+
+  <?php require_once('footer.php');?>
+
+
+
+
+
+
+
+
+  
 </body>
-</HTML>
+</html>
