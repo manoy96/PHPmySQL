@@ -1,4 +1,13 @@
 <?php
+ 
+
+
+
+
+
+
+  require_once('authorize.php');
+
   require_once('variables.php');
 
   //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
@@ -31,7 +40,10 @@
     <h1>Blog Comments</h1>
 
     <?php
-      
+      if (mysqli_num_rows($result) == 0) {
+        # code...
+        echo '<p>All Comments have been approved</p>';
+      } else {
 
 
       //DISPLAY WHAT WE FOUND
@@ -45,7 +57,7 @@
         echo '<p class="date">'.$row['date'].'</p>';
         echo '</article>';
       }//end WHILE
-
+    }//end if
 
 
     ?>
