@@ -82,7 +82,7 @@ $found = mysqli_fetch_array($result);
 
         <input type="hidden" name="id" value="<?php echo $found['id']; ?>">
 
-        <input type="submit" value="Update Employee" id="submitButton" class="submitButton"> 
+        <input type="submit" value="Update Employee" id="submitButton" class="submitButton">
 
     </form>
 
