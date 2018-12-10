@@ -22,10 +22,10 @@ $subject = 'Test';
 $text = $_POST['This is a message'];
 
 //CONNECT TO DATABASE
-$dbconnection = mysqli_connect('HOST','USER','PASSWORD','DB_NAME') or die('DATABASE connection failed');
+$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('sendEMAIL DATABASE connection failed');
 
 //QUERY
-$query = "SELECT * FROM employee_team";
+$query = "SELECT * FROM employee_directory";
 $result = mysqli_query($dbconnection, $query) or die('DATABASE connection failed');
     
 while($row = mysqli_fetch_array($result)) {

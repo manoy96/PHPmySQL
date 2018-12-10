@@ -1,0 +1,108 @@
+[10-Dec-2018 00:34:54 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:34:54 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:34:54 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 37
+[10-Dec-2018 00:34:54 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 41
+[10-Dec-2018 00:34:54 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 64
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 32
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 33
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 34
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 35
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 36
+[10-Dec-2018 00:35:22 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 37
+[10-Dec-2018 00:35:28 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:35:28 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:35:28 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 37
+[10-Dec-2018 00:35:28 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 41
+[10-Dec-2018 00:35:28 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 64
+[10-Dec-2018 00:35:34 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:35:34 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:35:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 37
+[10-Dec-2018 00:35:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 41
+[10-Dec-2018 00:35:34 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 60
+[10-Dec-2018 00:35:38 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:35:38 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:35:38 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 46
+[10-Dec-2018 00:35:38 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 48
+[10-Dec-2018 00:35:42 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:35:42 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:35:42 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 37
+[10-Dec-2018 00:35:42 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 41
+[10-Dec-2018 00:35:42 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 60
+[10-Dec-2018 00:36:18 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:36:18 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:36:18 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 37
+[10-Dec-2018 00:36:18 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 41
+[10-Dec-2018 00:36:18 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 64
+[10-Dec-2018 00:36:25 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:36:25 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:36:25 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 46
+[10-Dec-2018 00:36:25 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 48
+[10-Dec-2018 00:37:55 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:37:55 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:37:55 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 37
+[10-Dec-2018 00:37:55 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 41
+[10-Dec-2018 00:37:55 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 60
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 32
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 33
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 34
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 35
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 36
+[10-Dec-2018 00:38:19 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 37
+[10-Dec-2018 00:39:52 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:39:52 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:39:52 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 37
+[10-Dec-2018 00:39:52 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 41
+[10-Dec-2018 00:39:52 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 64
+[10-Dec-2018 00:39:56 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:39:56 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:39:56 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 37
+[10-Dec-2018 00:39:56 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 41
+[10-Dec-2018 00:39:56 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 60
+[10-Dec-2018 00:39:59 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:39:59 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:39:59 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 46
+[10-Dec-2018 00:39:59 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 48
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 32
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 33
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 34
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 35
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 36
+[10-Dec-2018 00:44:13 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 37
+[10-Dec-2018 00:44:49 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:44:49 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 43
+[10-Dec-2018 00:44:49 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 46
+[10-Dec-2018 00:44:49 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/contact-v3.php on line 48
+[10-Dec-2018 00:45:30 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:45:30 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 34
+[10-Dec-2018 00:45:30 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 37
+[10-Dec-2018 00:45:30 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 41
+[10-Dec-2018 00:45:30 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/admin.php on line 60
+[10-Dec-2018 00:47:11 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:47:11 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 34
+[10-Dec-2018 00:47:11 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 37
+[10-Dec-2018 00:47:11 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 41
+[10-Dec-2018 00:47:11 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/index.php on line 64
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 32
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 33
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 34
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 35
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 36
+[10-Dec-2018 00:47:49 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 37
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_connect(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 30
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 32
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 33
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 34
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 35
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 36
+[10-Dec-2018 00:48:05 UTC] PHP Warning:  mysqli_real_escape_string() expects parameter 1 to be mysqli, boolean given in /home4/manuele1/public_html/dgm3760/midterm1/add_employee.php on line 37
+[10-Dec-2018 02:57:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/manuele1/public_html/dgm3760/midterm1/contact.php:1) in /home4/manuele1/public_html/dgm3760/midterm1/contact.php on line 53
+[10-Dec-2018 02:57:56 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/manuele1/public_html/dgm3760/midterm1/contact.php:1) in /home4/manuele1/public_html/dgm3760/midterm1/contact.php on line 53

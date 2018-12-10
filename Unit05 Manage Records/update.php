@@ -43,7 +43,6 @@ $found = mysqli_fetch_array($result);
             required>
           </label>
         
-        <!-- ------------------LAST--------------------------------------- -->
           <label><span>Last</span>
             <input name="last" 
             type="text" 
@@ -54,7 +53,6 @@ $found = mysqli_fetch_array($result);
           </label>
           
     
-            <!------------------PHONE--------------------------------------- -->
               <label><span>Phone</span>
                 <input name="phone" 
                 type="phone" 

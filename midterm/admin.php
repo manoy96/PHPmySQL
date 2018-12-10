@@ -21,11 +21,11 @@
   require_once('variables.php');
     
   //CONNECT TO DATABASE
-  $dbconnection = mysqli_connect('HOST','USER','PASSWORD','DB_NAME') or die('DATABASE connection failed');
+  $dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('DATABASE connection failed');
 
   // QUERY
-  $query = "SELECT * FROM employee_team";
-  $data = mysqli_query($dbconnection, $query) or die('DATABASE connection failed');
+  $query = "SELECT * FROM employee_directory";
+  $data = mysqli_query($dbconnection, $query) or die('ADMIN DATABASE connection failed');
 
   // // Loop through the array of employee data, formatting it as HTML 
   echo '<table class="editTable">';

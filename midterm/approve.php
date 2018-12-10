@@ -56,10 +56,10 @@
     if ($_POST['confirm'] == 'Yes') {
 
        //CONNECT TO DATABASE
-      $dbconnection = mysqli_connect('HOST','USER','PASSWORD','DB_NAME') or die('DATABASE connection failed');
+      $dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('APPROVE DATABASE connection failed');
 
       // Approve the employee information setting to the approved column in the database
-      $query = "UPDATE employee_team SET approved = 1 WHERE id = $id";
+      $query = "UPDATE employee_directory SET approved = 1 WHERE id = $id";
       mysqli_query($dbconnection, $query);
       mysqli_close($dbconnection);
 

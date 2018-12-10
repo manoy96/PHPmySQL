@@ -4,7 +4,7 @@ require_once('variables.php');
     
 if (isset($_POST['submit'])) {
   //CONNECT TO DATABASE
-  $dbconnection = mysqli_connect('HOST','USER','PASSWORD','DB_NAME') or die('DATABASE connection failed');
+  $dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('ADD DATABASE connection failed');
 
   // GET EMPLOYEE DATA
 
@@ -20,8 +20,8 @@ if (isset($_POST['submit'])) {
   $specialization = mysqli_real_escape_string($dbconnection, trim($_POST['specialization']));
   //picture
   $picture = mysqli_real_escape_string($dbconnection, trim($_FILES['picture']['name']));
-  $picType = $_FILES['picType']['type'];
-  $picSize = $_FILES['picSize']['size']; 
+  $picType = $_FILES['picture']['type'];
+  $picSize = $_FILES['picture']['size']; 
 
 
 
@@ -37,9 +37,9 @@ if (isset($_POST['submit'])) {
         if (move_uploaded_file($_FILES['picture']['tmp_name'], $target)) {
 
           // INSERT DATA INTO DATABASE
-          $query = "INSERT INTO employee_team (fullname, expertise, email, phone, specialization, picture, approved) VALUES ('$fullname', '$expertise', '$email', '$phone', '$specialization', '$picture', 0)";
+          $query = "INSERT INTO employee_directory (fullname, expertise, email, phone, specialization, picture, approved) VALUES ('$fullname', '$expertise', '$email', '$phone', '$specialization', '$picture', 0)";
           
-          $results = mysqli_query($dbconnection, $query)or die('query failed');
+          mysqli_query($dbconnection, $query)or die('query failed');
             
           // CONFIRM USER
           echo '<p>Thanks for adding your new employee information! It will be reviewed and added to the employee page as soon as possible.</p>';
@@ -65,7 +65,7 @@ if (isset($_POST['submit'])) {
           echo '<p>Image Upload Failed</p>';
         }
       }      
-    } else { echo '<p>file must be greater than ' . (fileSize / 1024) . ' KB in size.</p>';      }
+    } else { echo '<p>file must be greater than '.(fileSize / 1024).' KB in size.</p>';      }
       
 
     @unlink($_FILES['picture']['tmp_name']);
@@ -107,6 +107,7 @@ if (isset($_POST['submit'])) {
         
       <label><p>Employee Picture:</p>
       <input type="file" id="picture" name="picture" /><br>
+      <br>
       <input type="submit" value="Add" name="submit" /></label>
   </fieldset>
 

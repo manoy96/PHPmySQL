@@ -32,11 +32,11 @@ include('navbar.php');
            
         <?php
           //CONNECT TO DATABASE
-          $dbconnection = mysqli_connect('HOST','USER','PASSWORD','DB_NAME') or die('DATABASE connection failed');
+          $dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('DATABASE connection failed');
 
           // QUERY
-          $query = "SELECT * FROM employee_team";
-          $data = mysqli_query($dbconnection, $query) or die('DATABASE connection failed');
+          $query = "SELECT * FROM employee_directory";
+          $data = mysqli_query($dbconnection, $query) or die('CONTACT DATABASE connection failed');
 
 		    echo 'Who is this message for: <br><br>'; 
 		    while ($row = mysqli_fetch_array($data)) { 

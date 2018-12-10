@@ -1,55 +1,41 @@
-<?php 
-require_once('variables.php');
-
-//BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
-$dbconnection = mysqli_connect(HOST,USER,PASSWORD,DB_NAME) or die('connection failed');
-
-//QUERY
-$query = "SELECT * FROM employee_simple";
-
-// //NOW TRY AND TALK TO THE DATABASE
-$result = mysqli_query($dbconnection ,$query) or die('query failed');
+<?php
+  // This starts the session
+  require_once('startsession.php');
+  // The header
+  $page_title = '&#8220;Finding Love that Lasts.&#8221;';
+  require_once('header.php');
+  require_once('appvars.php');
+  require_once('connectvars.php');
+  // Displays the navigation
+  require_once('navmenu.php');
+  // Connects to the database 
+  $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME); 
+  // Retrieve user information from MySQL
+  $query = "SELECT user_id, first_name, picture FROM matchmaker_user WHERE first_name IS NOT NULL ORDER BY join_date DESC LIMIT 5";
+  $data = mysqli_query($dbc, $query);
+  // Loop through the array of user information and format this as HTML
+  echo '<h4>Most Recent Members:</h4>';
+  echo '<table>';
+  while ($row = mysqli_fetch_array($data)) {
+    if (is_file(MM_UPLOADPATH . $row['picture']) && filesize(MM_UPLOADPATH . $row['picture']) > 0) {
+        echo '<tbody>';
+      echo '<tr class="home-tr"><td class="home-td"><img src="' . MM_UPLOADPATH . $row['picture'] . '" alt="' . $row['first_name'] . '" /></td>';
+    }
+    else {
+      echo '<tr class="home-tr"><td class="home-td"><img src="' . MM_UPLOADPATH . 'nopic.jpg' . '" alt="' . $row['first_name'] . '" /></td>';
+    }
+    if (isset($_SESSION['user_id'])) {
+      echo '<td class="home-td"><a class="name-title" href="viewprofile.php?user_id=' . $row['user_id'] . '">' . $row['first_name'] . '</a></td></tr>';
+    }
+    else {
+      echo '<td class="home-td">' . $row['first_name'] . '</td></tr>';
+    }
+  }
+  echo '</table>';
+  mysqli_close($dbc);
 ?>
 
-
-
-
-<!DOCTYPE HTML>
-<HTML>
-<head>
-<meta charset="UTF-8">
-<title>Learn</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,600" rel="stylesheet">
-<link href="css/reset.css" rel="stylesheet" type="text/css">
-<link href="css/styles.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<!-- -------------------------------------------------------------------- -->
-<main>
-  <header>
-    <h1>Employee Directory</h1>
-  </header>
-
-  <?phpinclude_once('navbar.php'); ?>
-
-  <?php
-  // DISPLAY WHAT WE FOUND
-  while ($row = mysqli_fetch_array($result)) {
-    echo '<p><a href="detail.php?id='.$row['id'].'">';
-    echo $row['last'] .', '. $row['first'].' - '.$row['dept'];
-    echo '</a>';
-    echo '<a href="update.php?id='.$row['id'].'"> - update</a>';
-    echo '</p>';
-  };
-//we're done so hang up
-  mysqli_close($dbconnection);
-  ?>
-  <nav>
-  <a href="delete.php">Delete Employee</a> |
-  <a href="add.html">Add Employee</a> |
-  <a href="update.php">Update Employee</a>
-</nav>
-</main>
-</body>
-</HTML>
+<?php
+  // Displays the footer
+  require_once('footer.php');
+?>
