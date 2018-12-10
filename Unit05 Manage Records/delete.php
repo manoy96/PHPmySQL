@@ -49,7 +49,6 @@ $result = mysqli_query($dbconnection ,$query) or die('query failed');
   ?>
 
 
-  <?php require_once('footer.php');?>
 
 
 
