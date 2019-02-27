@@ -5,7 +5,7 @@ $employee_id = $_GET[id];
 $dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
 
 //DISPLAY SELECTED RECORDS
-$query = "SELECT * FROM employee_simple WHERE id=employee_simple";
+$query = "SELECT * FROM employee_simple";
 
 // //NOW TRY AND TALK TO THE DATABASE
 $result = mysqli_query($dbconnection ,$query) or die('update query failed');

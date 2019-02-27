@@ -1,7 +1,7 @@
 <?php
 $subject = $_POST[subject];
 $message = $_POST[message];
-$from = $_POST['10612335@my.uvu.edu'];
+$from = $_POST['mfewcar@gmail.com'];
 
 
 
