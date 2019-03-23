@@ -128,7 +128,7 @@ function generate_page_links($user_search, $sort, $cur_page, $num_pages)
 // Grab the sort setting and search keywords from the URL using GET
 $sort = $_GET['sort'];
 $user_search = $_GET['usersearch'];
-echo '<a href="index.html>New Search</a><br><p class="srch">You are searching ';
+echo '<a href="index.html">New Search</a><br><p class="srch">You are searching ';
 echo $user_search . ' : ';
 echo strlen($user_search);
 echo '</p><br>';
