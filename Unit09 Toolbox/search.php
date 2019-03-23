@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="container">
-  <h1>Web Development Jobs</h1>
+  <h1>Dev Jobs</h1>
   <hr>
   <p class="search">Search Results:</p>
 
