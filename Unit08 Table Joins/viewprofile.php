@@ -36,8 +36,10 @@
     if (!empty($row['last_name'])) {
       echo '<tr width="100%"><td width="30%" class="label">Last name:</td><td>' . $row['last_name'] . '</td></tr>';
     }
+    
     // New Ternary Operator
         $preference = ($row['gender'] == 'M') ? 'Male' : 'Female';
+
     // Use the value of the Ternary Operator and Output it in the Gender field
     if (!empty($row['gender'])) {
       echo '<tr width="100%"><td width="30%" class="label">Gender:</td><td>';
