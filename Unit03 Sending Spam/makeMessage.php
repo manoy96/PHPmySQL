@@ -13,6 +13,9 @@
 
 
    <main>
+    <header>
+      <h2>Message</h2>
+    </header>
 
   <form class="myForm" action="sendMessage.php" method="POST" enctype="multipart/form-data">
 <!-- ------------------SUBJECT--------------------------------------- -->
@@ -25,20 +28,13 @@
 <!-- ------------------MESSAGE--------------------------------------- -->
 <section id="fullName" class="normal">
   <label ><span>Message</span>
-    <input name="message" type="text" class="myInput" placeholder = "Message Here" autofocus required>
+    <input name="messageƒ" type="text" class="myInput" placeholder = "Message Here" autofocus required>
   </label>
   </section>
-<!-- ------------------EMAIL--------------------------------------- -->
-  <!-- <section id="fullName" class="normal">
-    <label ><span>Email*</span>
-      <input name="email" type="email" class="myInput" placeholder = "j.smith@email.com" autofocus required>
-      <div>Please provide your email address</div>
-    </label>
-    </section> -->
 
-  
+
   <input type="submit" value="SUBMIT" id="submitButton" class="submitButton">
-  
+
   </form>
   </main>
  </body>
