@@ -3,51 +3,74 @@
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 main {
 	max-width: 500px;
 	font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  background-color: #fff;
-  margin: 1em 1em 0 auto;
+	font-weight: 300;
+	background-color: #fff;
+	margin: 1em 1em 0 auto;
 	/*loaded 300 and 600 weight*/
-	}
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
 main h1 {
 	font-size: 36px;
 	font-family: "Open Sans", sans-serif;
 	color: #fff;
 	padding: 1rem 0 .5rem 2%;
 }
-body{
-  margin: auto;
+
+main h2 {
+	font-size: 24px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	padding: 1rem 0 .5rem 2%;
 }
 
-header{
-	background-color: #5157a8;
-	margin: .5rem auto;
+main p {
+	margin: .75rem 0;
+	line-height: 1.6;
 }
+
+body {
+	margin: auto;
+}
+
+header {
+	background-color: #666;
+	/* margin: .5rem auto; */
+}
+
 form.myForm section {
 	padding: .5rem 2%;
 	margin-bottom: .3rem;
 }
 
-form{
+form {
 	width: 100%;
 }
-form fieldset{
+
+form fieldset {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
 
 
-form.myForm label {display: block;}
+form.myForm label {
+	display: block;
+}
+
 form.myForm span {
-	background-color: #666; 
-	color: #eee; 
+	background-color: #666;
+	color: #eee;
 	padding: .1rem;
 	font-weight: 600;
 	display: block;
@@ -71,8 +94,7 @@ form.myForm .myInput:focus {
 
 .submitButton {
 	border-radius: 20px;
-	background: #5157a8;
-	background: linear-gradient(to bottom,  #5157a8 0%,#a5a2c2 100%);
+	background-color: #333;
 	color: white;
 	border: none;
 	width: 100%;
@@ -86,7 +108,10 @@ form.myForm .myInput:focus {
 /*  ERROR STYLES   */
 
 /*Yellow box at the top of the form indicating there are errors below */
-section.hiddenErrorMsg {display: none;}
+section.hiddenErrorMsg {
+	display: none;
+}
+
 section.showErrorMsg {
 	border: dashed 1px red;
 	border-radius: 15px;
@@ -99,19 +124,23 @@ section.showErrorMsg {
 	background-color: #f2eed2;
 	display: block;
 }
+
 section.showErrorMsg div {
-	color: #333; 
+	color: #333;
 	font-size: .8rem;
 }
+
 section.showErrorMsg div i {
 	background-color: #ffdada;
-	font-style: italic; 
-	color: red; 
+	font-style: italic;
+	color: red;
 	font-weight: 300;
 }
 
 /*Chagne the background of the full thing to red*/
-form.myForm section.error{background-color: #ffdada;}
+form.myForm section.error {
+	background-color: #ffdada;
+}
 
 /* hide the feedback text from the user*/
 form.myForm section.normal div {
@@ -125,4 +154,16 @@ form.myForm section.error div {
 	font-weight: 600;
 	font-style: italic;
 	display: block;
+}
+
+
+.btn-2 {
+	width: 30%;
+	background-color: #666;
+	color: #fff;
+	padding: .3rem 1rem;
+	margin-top: 1rem;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
 }

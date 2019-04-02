@@ -32,19 +32,19 @@ $result = mysqli_query($dbconnection ,$query) or die('query failed');
   <?php
   // DISPLAY WHAT WE FOUND
   while ($row = mysqli_fetch_array($result)) {
-    echo '<p><a href="detail.php?id='.$row['id'].'">';
-    echo $row['last'] .', '. $row['first'].' - '.$row['dept'];
+    echo '<p><a class="myUser" href="detail.php?id='.$row['id'].'">';
+    echo $row['last'] .', '. $row['first'].' - '.$row['dept'].' - ';
     echo '</a>';
-    echo '<a href="update.php?id='.$row['id'].'"> - update</a>';
+    echo '<a class="update" href="update.php?id='.$row['id'].'">update</a>';
     echo '</p>';
   };
 //we're done so hang up
   mysqli_close($dbconnection);
   ?>
   <nav>
-  <a href="delete.php">Delete Employee</a> |
-  <a href="add.html">Add Employee</a> |
-  <a href="update.php">Update Employee</a>
+  <a class="links" href="delete.php">Delete Employee</a> |
+  <a class="links" href="add.html">Add Employee</a> |
+  <a class="links" href="update.php">Update Employee</a>
 </nav>
 </main>
 </body>

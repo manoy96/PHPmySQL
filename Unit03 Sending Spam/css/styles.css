@@ -24,6 +24,16 @@ main h1 {
 	color: #fff;
 	padding: 1rem 0 .5rem 2%;
 }
+main h2 {
+	font-size: 24px;
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	padding: 1rem 0 .5rem 2%;
+}
+main p {
+	margin: .75rem 0;
+	line-height: 1.6;
+}
 body{
   margin: auto;
 }

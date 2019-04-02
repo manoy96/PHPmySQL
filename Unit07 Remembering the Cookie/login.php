@@ -23,7 +23,9 @@
           
         // Look up the username and password in the database
         // Use SHA encoding for the password
-        $query = "SELECT user_id, username FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
+        echo $user_username;
+        echo $user_password;
+        $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
         $data = mysqli_query($dbc, $query) or die('query failed');
 
         if (mysqli_num_rows($data) == 1) {
@@ -36,10 +38,11 @@
           setcookie('username', $row['username'], time() + (60 * 60 * 24 * 30));  // Expires in 30 days
           $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/index.php';
           header('Location: ' . $home_url);
+
         } else {
 
           // The USERNAME/PASSWORD are incorrect -- set an error message
-          $error_msg = 'Sorry, you must enter a valid username and password to log in.';
+          $error_msg = 'test Sorry, you must enter a valid username and password to log in.';
         }
       } else {
 
