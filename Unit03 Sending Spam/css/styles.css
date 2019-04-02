@@ -13,6 +13,9 @@ main {
   font-weight: 300;
   background-color: #fff;
   margin: 1em 1em 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 	/*loaded 300 and 600 weight*/
 	}
 main h1 {
@@ -26,8 +29,8 @@ body{
 }
 
 header{
-	background-color: #5157a8;
-	margin: .5rem auto;
+	background-color: #666;
+	/* margin: .5rem auto; */
 }
 form.myForm section {
 	padding: .5rem 2%;
@@ -61,8 +64,7 @@ form.myForm .myInput:focus {
 
 form.myForm .submitButton {
 	border-radius: 20px;
-	background: #5157a8;
-	background: linear-gradient(to bottom,  #5157a8 0%,#a5a2c2 100%);
+	background-color: #333;
 	color: white;
 	border: none;
 	width: 100%;
@@ -114,4 +116,15 @@ form.myForm section.error div {
 	font-weight: 600;
 	font-style: italic;
 	display: block;
+}
+
+.btn-2 {
+	width: 30%;
+	background-color: #666;
+	color: #fff;
+	padding: .3rem 1rem;
+	margin-top: 1rem;
+	border-radius: 8px;
+	text-align: center;
+	text-decoration: none;
 }
