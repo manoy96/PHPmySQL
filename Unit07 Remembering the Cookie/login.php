@@ -23,8 +23,6 @@
           
         // Look up the username and password in the database
         // Use SHA encoding for the password
-        echo $user_username;
-        echo $user_password;
         $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
         $data = mysqli_query($dbc, $query) or die('query failed');
 
