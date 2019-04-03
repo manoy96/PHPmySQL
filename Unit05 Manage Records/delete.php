@@ -1,13 +1,13 @@
-<?php 
+<?php
 
 //BUILD THE DATABASE CONNECTIONWITH host, user, pass, database
-$dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','manuele1_3760test') or die('connection failed');
+$dbconnection = mysqli_connect('localhost', 'manuele1_3760usr', 'y(-aJt=?#-!J', 'manuele1_3760test') or die('connection failed');
 
 //BUILD THE QUERRY
 $query = "SELECT * FROM employee_simple ORDER BY last ASC";
 
 // //NOW TRY AND TALK TO THE DATABASE
-$result = mysqli_query($dbconnection ,$query) or die('query failed');
+$result = mysqli_query($dbconnection, $query) or die('query failed');
 
 ?>
 
@@ -34,29 +34,31 @@ $result = mysqli_query($dbconnection ,$query) or die('query failed');
 </head>
 <body>
 
-  <h1>Delete Employees</h1>
+<main>
+
+   <header>
+      <h1>Delete Employees</h1>
+   </header>
 
   <?php
-  // DISPLAY WHAT WE FOUND
-  while ($row = mysqli_fetch_array($result)) {
+// DISPLAY WHAT WE FOUND
+while ($row = mysqli_fetch_array($result)) {
     echo '<p>';
-    echo $row['last'] . ', '. $row['first'].' - '.$row['dept'];
-    echo '<a href="delete2.php?id=' .$row['id']. '">Delete</a>';
+    echo $row['last'] . ', ' . $row['first'] . ' - ' . $row['dept'] . ' - ';
+    echo '<a class="delete" href="delete2.php?id=' . $row['id'] . '">Delete</a>';
     echo '</p>';
-  };
+}
+;
 
-  mysqli_close($dbconnection);
-  ?>
+mysqli_close($dbconnection);
+?>
 
+   <nav>
+      <a class="links" href="delete.php">Delete Employee</a> |
+      <a class="links" href="add.html">Add Employee</a> |
+      <a class="links" href="index.php">Update Employee</a>
+   </nav>
 
-
-
-
-
-
-
-
-
-  
+</main>
 </body>
 </html>
