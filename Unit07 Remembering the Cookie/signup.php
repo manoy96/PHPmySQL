@@ -14,6 +14,7 @@
   require_once('connectvars.php');
   // Connect to database
   $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+  
   if (isset($_POST['submit'])) {
     // Grab profile information from the POST
     $username = mysqli_real_escape_string($dbc, trim($_POST['username']));
