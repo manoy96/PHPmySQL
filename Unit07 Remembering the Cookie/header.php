@@ -5,7 +5,7 @@
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 
 <?php
-  echo '<title>MatchMaker - ' . $page_title . '</title>';
+  echo '<title>Space X</title>';
 ?>
 
   <link rel="stylesheet" type="text/css" href="style.css" />
@@ -13,6 +13,6 @@
 <body>
 
 <?php
-  echo '<h3 class="logo">Match&#x26A4;Maker</h3>';
+  echo '<h3 class="logo">Space X</h3>';
   echo '<h5 class="subtitle">' . $page_title . '</h5>';
 ?>

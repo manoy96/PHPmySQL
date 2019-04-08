@@ -2,7 +2,7 @@
   // This starts the session
   require_once('startsession.php');
   // The header
-  $page_title = '&#8220;Finding Love that Lasts.&#8221;';
+  // $page_title = '&#8220;Finding Love that Lasts.&#8221;';
   require_once('header.php');
   require_once('appvars.php');
   require_once('connectvars.php');

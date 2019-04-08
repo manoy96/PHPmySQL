@@ -44,7 +44,7 @@ form {
 }
 
 .btn {
-  background-color: red;
+  background-color: #666;
   padding: 10px;
   color: #fff;
   margin-top:1%;
@@ -128,9 +128,10 @@ vertical-align: top;
 .logo {
   font-family: 'Montserrat', sans-serif;
   font-size: 320%;
-  color: red;
+  color: #666;
   margin-top: 0px;
   margin-left: 2%;
+  padding: 2rem 0;
   
 }
 
@@ -139,7 +140,7 @@ vertical-align: top;
   font-size: 125%;
   margin-top:-4.5%;
   margin-left:5%;
-  color: red;
+  color: lighten(#666, 10%);
 }
 
 .menu {

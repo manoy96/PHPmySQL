@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>MatchMaker - Sign Up</title>
+  <title>Space X - Sign Up</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway" rel="stylesheet">
 </head>
 <body>
-  <h3 class="logo">Match&#x26A4;Maker</h3>
+  <h3 class="logo">Space X</h3>
   <h4 class="subtitle">Sign Up</h4>    
 <?php
   require_once('appvars.php');

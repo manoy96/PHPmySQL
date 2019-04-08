@@ -59,7 +59,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-  <h3 class="logo">Match&#x26A4;Maker</h3>
+  <h3 class="logo">Space X</h3>
   <h4 class="subtitle">Log In</h4>
   
 
