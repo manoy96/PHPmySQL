@@ -40,7 +40,7 @@
         } else {
 
           // The USERNAME/PASSWORD are incorrect -- set an error message
-          $error_msg = 'test Sorry, you must enter a valid username and password to log in.';
+          $error_msg = 'Sorry, you must enter a valid username and password to log in.';
         }
       } else {
 
@@ -55,7 +55,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>MatchMaker - Log In</title>
+  <title>Space X - Log In</title>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
