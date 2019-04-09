@@ -12,6 +12,8 @@
 
     if (isset($_POST['submit'])) {
 
+
+
       // Connect to the database
       $dbc = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
@@ -19,14 +21,17 @@
       $user_username = mysqli_real_escape_string($dbc, trim($_POST['username']));
       $user_password = mysqli_real_escape_string($dbc, trim($_POST['password']));
 
+        $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
+        $data = mysqli_query($dbc, $query) or die ('query failed');
+
       if (!empty($user_username) && !empty($user_password)) {
           
         // Look up the username and password in the database
         // Use SHA encoding for the password
         $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
-        $data = mysqli_query($dbc, $query) or die('query failed');
+        $data = mysqli_query($dbc, $query) or die ('query failed');
 
-        if (mysqli_num_rows($data) == 1) {
+        if (mysqli_num_rows($data) > 0) {
 
           // This set the LOG-IN to OK and sets the USER ID and USERNAME session vars (and cookies), and redirect to the home page
           $row = mysqli_fetch_array($data);
@@ -42,7 +47,8 @@
           // The USERNAME/PASSWORD are incorrect -- set an error message
           $error_msg = 'Sorry, you must enter a valid username and password to log in.';
         }
-      } else {
+      } 
+      else {
 
         // The USERNAME/PASSWORD were not entered -- set an ERROR MESSAGE
         $error_msg = 'Sorry, you must enter your username and password to log in.';
