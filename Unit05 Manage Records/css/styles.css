@@ -230,3 +230,12 @@ nav {
 	border-radius: 8px;
 	text-decoration: none;
 }
+
+.delete2 {
+	font-size: 36px;
+	font-family: "Open Sans", sans-serif;
+	color: #666;
+	padding: 1rem 0 .5rem 2%;
+	text-align: center;
+	margin: 0 auto;
+}
