@@ -2,7 +2,7 @@
   require_once('connectvars.php');
 
   // Clear the error message
-  $error_msg = "";
+  $error_msg = "<a href='signup.php'>Create an Account</a>";
 
     if (isset($_POST['submit'])) {
 
@@ -25,7 +25,7 @@
         if(mysqli_num_rows($data) == 1){
 
           $row = mysqli_fetch_array($data);
-
+          //COOKIES
           setcookie("username", $row["username"], time() + (60*60*24*30));
           setcookie("first", $row["first"], time() + (60*60*24*30));
           setcookie("last", $row["last"], time() + (60*60*24*30));
