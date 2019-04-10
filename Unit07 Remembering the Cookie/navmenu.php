@@ -1,6 +1,6 @@
 <?php
   // Generate the navigation menu
-  if (isset($_SESSION['username'])) {
+  if (isset($_COOKIE['username'])) {
     echo '<div class="menu">';  
     echo '<a href="index.php">Home</a>';
     echo '<a href="viewprofile.php">View Profile</a>';
