@@ -33,24 +33,27 @@
     $profileimage_type = $_FILES['profileimage']['type'];
     $profileimage_size = $_FILES['profileimage']['size'];
 
-    if (!empty($name) && !empty($email) && is_numeric($bidnumber) && !empty($profileimage)) {
+    if (!empty($name) && !empty($email) && !empty($bidnumber) && !empty($profileimage)) {
+      // echo 'test';
 
       if ((($profileimage_type == 'image/gif') || ($profileimage_type == 'image/jpeg') || ($profileimage_type == 'image/pjpeg') || ($profileimage_type == 'image/png')) && ($profileimage_size > 0) && ($profileimage_size <= GW_MAXFILESIZE)) {
+        // echo 'test2';
 
         if ($_FILES['profileimage']['error'] == 0) {
 
           $target = GW_UPLOADPATH . $profileimage;
+          // echo 'test3';
 
           if (move_uploaded_file($_FILES['profileimage']['tmp_name'], $target)) {
 
-            $query = "INSERT INTO employee_records (name, bidnumber, profileimage, email, approved, date) VALUES (NOW(), '$name', '$bidnumber','$profileimage',  '$email', 0)";
+            $query = "INSERT INTO employee_records (name, email, bidnumber, profileimage, approved, date) VALUES (NOW(), '$name', '$bidnumber','$profileimage', '$email', 0)";
 
             mysqli_query($dbc, $query);
             
             echo '<p>Thanks for adding your employee information! It will be reviewed and added to our employee list as soon as possible.</p>';
             echo '<p><strong>Name:</strong> ' . $name . '<br>';
             echo '<strong>Email:</strong> ' . $email . '<br>';
-            echo '<strong>bidnumber:</strong> ' . $bidnumber . '<br>';  
+            echo '<strong>Comment:</strong> ' . $bidnumber . '<br>';  
             echo '<img src="' . GW_UPLOADPATH . $profileimage . '" alt="Profile image" /></p>';
             echo '<p><a href="index.php">&lt;&lt; Back to Employee List</a></p>';
 
