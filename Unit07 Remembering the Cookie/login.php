@@ -1,14 +1,8 @@
 <?php
   require_once('connectvars.php');
 
-  // Start the session
-  session_start();
-
   // Clear the error message
   $error_msg = "";
-
-  // If the user isn't logged in, try to log them in
-  if (!isset($_SESSION['user_id'])) {
 
     if (isset($_POST['submit'])) {
 
@@ -21,28 +15,24 @@
       $user_username = mysqli_real_escape_string($dbc, trim($_POST['username']));
       $user_password = mysqli_real_escape_string($dbc, trim($_POST['password']));
 
-        $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
-        $data = mysqli_query($dbc, $query) or die ('query failed');
-
       if (!empty($user_username) && !empty($user_password)) {
           
         // Look up the username and password in the database
         // Use SHA encoding for the password
-        $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = SHA('$user_password')";
+        $query = "SELECT * FROM matchmaker_user WHERE username = '$user_username' AND password = '$user_password'";
         $data = mysqli_query($dbc, $query) or die ('query failed');
 
-        if (mysqli_num_rows($data) > 0) {
+        if(mysqli_num_rows($data) == 1){
 
-          // This set the LOG-IN to OK and sets the USER ID and USERNAME session vars (and cookies), and redirect to the home page
           $row = mysqli_fetch_array($data);
-          $_SESSION['user_id'] = $row['user_id'];
-          $_SESSION['username'] = $row['username'];
-          setcookie('user_id', $row['user_id'], time() + (60 * 60 * 24 * 30));    // Expires in 30 days
-          setcookie('username', $row['username'], time() + (60 * 60 * 24 * 30));  // Expires in 30 days
+
+          setcookie("username", $row["username"], time() + (60*60*24*30));
+          setcookie("first", $row["first"], time() + (60*60*24*30));
+          setcookie("last", $row["last"], time() + (60*60*24*30));
+
           $home_url = 'http://' . $_SERVER['HTTP_HOST'] . dirname($_SERVER['PHP_SELF']) . '/index.php';
           header('Location: ' . $home_url);
-
-        } else {
+        }
 
           // The USERNAME/PASSWORD are incorrect -- set an error message
           $error_msg = 'Sorry, you must enter a valid username and password to log in.';
@@ -53,8 +43,7 @@
         // The USERNAME/PASSWORD were not entered -- set an ERROR MESSAGE
         $error_msg = 'Sorry, you must enter your username and password to log in.';
       }
-    }
-  }
+  
 ?>
 
 <!DOCTYPE html>

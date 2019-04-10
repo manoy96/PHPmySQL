@@ -18,15 +18,24 @@
   if (isset($_POST['submit'])) {
     // Grab profile information from the POST
     $username = mysqli_real_escape_string($dbc, trim($_POST['username']));
+    $first = mysqli_real_escape_string($dbc, trim($_POST['first']));
+    $last = mysqli_real_escape_string($dbc, trim($_POST['last']));
     $password1 = mysqli_real_escape_string($dbc, trim($_POST['password1']));
     $password2 = mysqli_real_escape_string($dbc, trim($_POST['password2']));
+
+    echo $username;
+    echo $password1;
+    echo $password2;
+    echo $first;
+    echo $last;
+
     if (!empty($username) && !empty($password1) && !empty($password2) && ($password1 == $password2)) {
       // Make sure someone isn't already registered using this username
       $query = "SELECT * FROM matchmaker_user WHERE username = '$username'";
       $data = mysqli_query($dbc, $query)or die('select query failed');
       if (mysqli_num_rows($data) == 0) {
         // The username is unique, so insert the data into the database
-        $query = "INSERT INTO matchmaker_user (username, password, join_date) VALUES ('$username', SHA('$password1'), NOW())";
+        $query = "INSERT INTO matchmaker_user (username, first, last, password) VALUES ('$username', '$first', '$last', '$password1')";
         mysqli_query($dbc, $query) or die('insert query failed');
         // Confirm success with user
         echo '<p>Your new account has been successfully created. You\'re now ready to <a href="login.php">log in</a>.</p>';
@@ -51,6 +60,10 @@
       <legend>Registration Info</legend>
       <label for="username">Username:</label>
       <input type="text" id="username" name="username" value="<?php if (!empty($username)) echo $username; ?>" /><br />
+      <label for="first">First Name:</label>
+      <input type="text" id="first" name="first" value="<?php if (!empty($first)) echo $first; ?>" /><br />
+      <label for="last">Last Name:</label>
+      <input type="text" id="last" name="last" value="<?php if (!empty($last)) echo $last; ?>" /><br />
       <label for="password1">Password:</label>
       <input type="password" id="password1" name="password1" /><br />
       <label for="password2">Password (retype):</label>

@@ -14,6 +14,9 @@
   $query = "SELECT user_id, first_name, picture FROM matchmaker_user WHERE first_name IS NOT NULL ORDER BY join_date DESC LIMIT 5";
   $data = mysqli_query($dbc, $query);
   // Loop through the array of user information and format this as HTML
+  echo $_COOKIE["username"];
+  echo $_COOKIE["first"];
+  echo $_COOKIE["last"];
   echo '<h4>Most Recent Members:</h4>';
   echo '<table>';
   while ($row = mysqli_fetch_array($data)) {
