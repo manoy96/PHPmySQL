@@ -35,7 +35,7 @@
       $data = mysqli_query($dbc, $query)or die('select query failed');
       if (mysqli_num_rows($data) == 0) {
         // The username is unique, so insert the data into the database
-        $query = "INSERT INTO matchmaker_user (username, first, last, password) VALUES ('$username', '$first', '$last', '$password1')";
+        $query = "INSERT INTO matchmaker_user (username, first, last, password) VALUES ('$username', '$first', '$last', SHA('$password1'))";
         mysqli_query($dbc, $query) or die('insert query failed');
         // Confirm success with user
         echo '<p>Your new account has been successfully created. You\'re now ready to <a href="login.php">log in</a>.</p>';
