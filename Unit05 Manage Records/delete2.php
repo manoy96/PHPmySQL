@@ -6,12 +6,12 @@ $dbconnection = mysqli_connect('localhost','manuele1_3760usr','y(-aJt=?#-!J','ma
 
 //DELETE SELECTED RECORD (IN FROM POST)
 if (isset($_POST['submit'])) {
-  echo $_POST['id'];
-  echo $_POST['photo'];
+  // echo $_POST['id'];
+  // echo $_POST['photo'];
 
   //BUILD A SELECT QUERY
   $query = "DELETE FROM employee_simple WHERE id=$_POST[id]";
-  echo $query;
+  // echo $query;
 
   //NOW TRY AND DELETE THE RECORD
   $result = mysqli_query($dbconnection ,$query) or die('delete query failed');
@@ -26,22 +26,20 @@ if (isset($_POST['submit'])) {
 
   // MAKE SURE CODE BELOW DOES NOT GET EXECUTED WHEN WE REDIRECT
   exit;
-}
+};
 
 
 
 
 
 //DISPLAY SELECTED RECORDS
-$query = "SELECT * FROM employee_simple WHERE id=employee_simple";
+$query = "SELECT * FROM employee_simple WHERE id=employee_id";
 
 // //NOW TRY AND TALK TO THE DATABASE
-$result = mysqli_query($dbconnection ,$query) or die('query failed');
+$result = mysqli_query($dbconnection ,$query) or die('Talk query failed');
 
 //PUT RESULTS IN A VARIABLE
 $found = mysqli_fetch_array($result);
-
-
 ?>
 
 
