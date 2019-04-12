@@ -3,8 +3,8 @@
   if (isset($_COOKIE['username'])) {
     echo '<div class="menu">';  
     echo '<a href="index.php">Home</a>';
-    echo '<a href="viewprofile.php">View Profile</a>';
-    echo '<a href="editprofile.php">Edit Profile</a>';
+    // echo '<a href="viewprofile.php">View Profile</a>';
+    // echo '<a href="editprofile.php">Edit Profile</a>';
     echo '<a href="logout.php">Log Out (' . $_COOKIE['username'] . ')</a>';
     echo '</div>';
   }
